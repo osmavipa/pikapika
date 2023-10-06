@@ -1,0 +1,147 @@
+.color__idi {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    background-color: red;
+    height: 6vh;
+    width: 100%;
+}
+
+.imges__pokeid {
+    position: absolute;
+    top: 3px;
+    left: 20px;
+    width: 100%;
+    max-width: 160px;
+}
+
+.bolas__pokeid {
+    position: absolute;
+    width: 100%;
+    max-width: 70px;
+    top: 20px;
+    right: 50px;
+}
+
+.color__classs {
+    background-color: black;
+    height: 3vh;
+    width: 100%;
+}
+
+.home__poke {
+    width: 100%;
+    height: 91vh;
+    background-image: url('../images/pika.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+
+.color__home {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 75%;
+    height: 75%;
+    transform: translate(-50%, -40%);
+    background-image: url('../images/pika.jpg');
+    background-position: center;
+    background-size: cover;
+    margin-top: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 2px 6px 2px 2px yellow;
+}
+
+.login {
+    color: #000000;
+    backdrop-filter: blur(5px);
+    margin-top: 20px;
+    padding: 50px 30px;
+    height: 70vh;
+}
+
+.tittle__poke {
+    font-size: 40px;
+}
+
+.saludo__poke {
+    font-weight: 800;
+    font-size: 23px;
+    color: rgb(0, 0, 0);
+}
+
+.searchinput__poke {
+    border: 3px solid #000000;
+    width: 100%;
+    max-width: 300px;
+    height: 30px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+
+.searchinput__poke:hover {
+    border: 3px solid red;
+}
+
+
+::placeholder {
+    text-align: center;
+    color: #000000;
+}
+
+.searchinput__poke:focus {
+    border: 4px solid #ffd900;
+    background-color: white;
+    transform: scale(1.05);
+    box-shadow: 13px 13px 100px #969696,
+        -13px -13px 100px #ffffff;
+        margin-right: 20px;
+}
+
+/*button desing*/
+
+.button__search {
+    --color: #020303;
+    font-family: inherit;
+    display: inline-block;
+    width: 6em;
+    height: 2.5em;
+    line-height: 2em;
+    overflow: hidden;
+    font-size: 13px;
+    z-index: 1;
+    color: var(--color);
+    border: 2px solid var(--color);
+    border-radius: 10px;
+    position: relative;
+}
+
+.button__search::before {
+    position: absolute;
+    content: "";
+    background: var(--color);
+    width: 150px;
+    height: 200px;
+    z-index: -1;
+    border-radius: 50%;
+}
+
+.button__search:hover {
+    color: white;
+}
+
+.button__search:before {
+    top: 100%;
+    left: 100%;
+    transition: .3s all;
+}
+
+.button__search:hover::before {
+    top: -30px;
+    left: -30px;
+}
